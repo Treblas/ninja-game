@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<head>
+	<title>Ninja Gold</title>
+</head>
+
+<body>
+	<div id = "container">
+		<img src = "Images/pokeninja.gif" style = "height: 110px;width: 110px;"></div>
+
+		<div class = "page-whole" >
+			<div class = "page" >
+				<div class ="form-inline" >
+<button class="button button5">50%</button>
+					<div class = "col-xs-3" style="margin-left:60px;margin-top:20px;">
+			
+							<div class="input-group">
+    							<span class="input-group-addon" id="lbl-txts">Attempts</span>
+   									 <input id="attempts" type="text" title="attempts" class="form-control col-sm-1 textbox-margin" value = 20 disabled>
+ 							 </div>
+					</div>
+					
+					<div class = "col-xs-3" style="margin-right:80px; margin-top:20px; float: right">
+						<div class="input-group">
+   									 <input id="earned" type="text" title="Gold" class="form-control col-sm-1 textbox-margin" value = 0 readonly>
+ 							     	 <span class="input-group-addon" id="lbl-txts">Gold</span>
+
+ 							 </div>
+					</div>
+
+					<br><br><br>
+					<div class = "col-xs-3" style="margin-left:60px;margin-top:20px; float:left;">
+						<div class="input-group">
+							 	<span class="input-group-addon "  name="lbl-bottom-losses"  >Losses</span>
+   								<input id = "lost" type="text" title="losses" class="form-control col-sm-1 textbox-margin" value = 0 readonly>
+
+ 						 </div>
+					</div>			
+					<div class = "col-xs-3" style="margin-right:80px;margin-top:20px;float:right;">
+						<div class="input-group">
+   								<input id = "gained"" type="text" title="gains" class="form-control col-sm-1 textbox-margin" value = 0 disabled>
+ 							    <span class="input-group-addon"  name="lbl-bottom-gains" >Gains</span>
+
+ 						 </div>
+					</div>
+					<div class = "button-holder">
+
+						<button class = "buttons btn btn-warning" id = "btncave" >Cave</button>
+						<button class = "buttons btn btn-warning " id = "btnmine"  >Mine</button>
+						<button class = "buttons btn btn-warning" id = "btnhouse" >House</button>
+						<button class = "buttons btn btn-warning" id = "btncasino">Casino</button></div>
+						<div class = "world" >
+							<img src = "Images/Cave.jpg" class = "img">
+							<img src = "Images/House.jpg" class = "img img-leftpadding">		
+
+						</div>
+
+						<div class = "world" >
+							<img src = "Images/Goldmine.jpg" class = "img">
+							<img src = "Images/Casino.jpg" class = "img img-leftpadding" >
+						</div>
+						<div id = "cont" class="container showback">
+							<div class = "col-xs-3 logtextbox" style="margin-left:60px;">
+								<center><strong>Total Gains:</strong><input  id = "gained" class="form-control col-sm-1 textbox-margin" value = 0 disabled> </center>
+							</div>
+							<div class = "col-xs-3 logtextbox" style="margin-right:160px; float: right">
+								<center><strong>Total losses:</strong> </center><input id = "lost"  class="form-control col-sm-1 textbox-margin" value = 0 readonly>
+							</div><center><h2>Log</h2>
+							<ul class="nav nav-tabs">
+								<li class = "active"><a data-toggle="tab" href="#log1">All</a></li>
+								<li><a data-toggle="tab" href="#log2">Wins</a></li>
+								<li><a data-toggle="tab" href="#log3">Losses</a></li>
+							</ul>
+						</center>
+
+						<div class="tab-content showback">
+
+							<div id="log1" class="tab-pane fade in active pan-style"  >
+
+							</div>
+							<div id="log2" class="tab-pane fade pan-style">
+
+							</div>
+							<div id="log3" class="tab-pane fade pan-style">
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<script type="text/javascript" src = "js/jquery.min.js"></script>
+			<script type="text/javascript" src = "js/bootstrap.js"></script>
+		<script>
+		</script>
+		</body>
+		</html>

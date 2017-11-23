@@ -1,0 +1,135 @@
+.page-whole{
+	width:100% ;
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.logtextbox{
+	padding-top: 15px; 
+}
+
+#cont{
+	width: 470px;
+	border: 1px solid white;
+	 margin-top: 20px; 
+	 padding-left: 20px;
+	 border-radius: 10px;
+}
+.img{
+
+	float:left;
+	width:40%;
+	height:100%;
+}
+.page{
+	padding-left: 18px;
+	width:100%;
+	height: 100%;
+	background-image:url("../images/t3.gif") ;
+	color:gold;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+.textbox-margin{
+	margin-bottom: 10px;
+	color:black;
+	font-weight: bold;
+}
+.world{
+	margin-top: 20px;
+	margin-left: 150px;
+	width:800px;
+	height: 200px;
+}
+#container{
+	z-index:99999;
+  	position:absolute;
+  	top: 500px;
+  	left: 275px;
+  	margin-top: -50px;
+  	margin-left: -50px;
+}
+.button-holder{
+	margin-top:90px;
+	margin-left: 50px;
+}
+.buttons{
+	height:50px;
+	margin-top:10px;
+	width:200px;
+}
+.img-leftpadding{
+	padding-left: 20px;
+}
+.img-rightpadding{
+	padding-right:20px;
+
+}
+.textarea-dim{
+	margin-left:100px;
+}
+.pan-style{
+	 height:150px;
+	 overflow-y: auto;
+}
+.log-container{
+	width: 900px;
+	border: 1px solid white;
+	 margin-top: 20px; 
+	border-radius: 10px;
+}
+.win{
+	line-height: 20px;
+	color:green;
+}
+.lose{
+	line-height: 20px;
+	color:red;
+}
+.noamount{
+	line-height: 20px;
+	color:black;
+}
+#lbl-txts{
+	color:black;
+	font-family:Times New Roman;
+	font-size:20px;
+	padding:5px;
+	background-color:#805500;
+	color:white;
+	font-weight:bolder;
+	
+}
+span[name=lbl-bottom-gains]{
+	color:black;
+	font-family:Times New Roman;
+	font-size:20px;
+	padding:5px;
+	background-color:#1f1f14;
+	color:white;
+	font-weight:bolder;
+	
+}
+span[name=lbl-bottom-losses]{
+	color:black;
+	font-family:Times New Roman;
+	font-size:20px;
+	padding:5px;
+	background-color:#1f1f14;
+	color:white;
+	font-weight:bolder;
+	
+}
+span{
+	background-color:#1f1f14;
+}
+#nav-log{
+	width:100%;
+}
+.log-txt{
+	font-size:35px;
+	letter-spacing:1px;
+}

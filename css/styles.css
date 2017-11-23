@@ -1,0 +1,330 @@
+.page-whole{
+	background-image:url("../images/temples.jpg") ;
+	width:100% ;
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.logtextbox{
+	padding-top: 15px; 
+}
+
+#cont{
+	width: 440px;
+	border: 1px solid white;
+	padding:5px;
+	border-radius: 10px;
+	height:300px;
+}
+.img{
+
+	float:left;
+	width:40%;
+	height:80%;
+}
+.page{
+	width:942px;
+	height: 100%;
+	background-color:#262b33;
+	color:gold;
+
+}
+.pagess{
+	width:50%%;
+	height: 100%;
+	background-color:#262b33;
+	color:gold;
+
+}
+.main{
+	
+	width:100%;
+	height: 100%;
+	background-color:#000;
+	color:gold;
+
+}
+.textbox-margin{
+	margin-bottom: 10px;
+	color:black;
+	font-weight: bold;
+}
+.world{
+	margin-top: 10px;
+	margin-left: 150px;
+	width:800px;
+	height: 200px;
+}
+#container{
+	z-index:99999;
+  	position:absolute;
+  	top: 350px;
+  	left: 575px;
+  	margin-top: -50px;
+  	margin-left: -50px;
+}
+
+.button-holder{
+	
+
+}
+.buttons{
+	height:40px;
+	margin-top:5px;
+	width:200px;
+	border-radius:50%;
+	background-color:orange;
+	 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-shadow:1px 1px #ff9900;
+}
+.buttons:hover{
+	color:white;
+}
+#btncave{
+margin-left:20px;
+height:40px;
+color:black;
+font-weight:bolder;
+}
+#btnmine{
+margin-left:20px;
+height:40px;
+color:black;
+font-weight:bolder;
+}
+#btnhouse{
+margin-left:20px;
+height:40x;
+color:black;
+font-weight:bolder;
+}
+#btncasino{
+margin-left:20px;
+height:40px;
+color:black;
+font-weight:bolder;
+}
+.img-leftpadding{
+	padding-left: 20px;
+}
+.img-rightpadding{
+	padding-right:20px;
+
+}
+.textarea-dim{
+	margin-left:100px;
+}
+.pan-style{
+	 height:150px;
+	 overflow-y: auto;
+}
+.log-container{
+	width: 900px;
+	border: 1px solid white;
+	 margin-top: 20px; 
+	border-radius: 10px;
+}
+.win{
+	line-height: 20px;
+	color:green;
+}
+.lose{
+	line-height: 20px;
+	color:red;
+}
+.noamount{
+	line-height: 20px;
+	color:black;
+}
+#lbl-txts{
+	color:black;
+	font-family:Times New Roman;
+	font-size:20px;
+	padding:5px;
+	background-color:#805500;
+	color:white;
+	font-weight:bolder;
+	
+}
+span[name=lbl-bottom-gains]{
+	color:black;
+	font-family:Times New Roman;
+	font-size:20px;
+	padding:5px;
+	background-color:#1f1f14;
+	color:white;
+	font-weight:bolder;
+	
+}
+span[name=lbl-bottom-losses]{
+	color:black;
+	font-family:Times New Roman;
+	font-size:20px;
+	padding:5px;
+	background-color:#1f1f14;
+	color:white;
+	font-weight:bolder;
+	
+}
+/*span{
+	background-color:#1f1f14;
+}*/
+#nav-log{
+	width:100%;
+}
+.log-txt{
+	font-size:35px;
+	letter-spacing:1px;
+}
+
+
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    height:120px;
+    cursor: pointer;
+    text-shadow:1px 1px #ff9900;
+}
+
+
+.settings {
+		border-radius: 50%;
+		width:140px;
+		background-color: #4d4d33;
+		margin-left:20px;
+		font-size:21px;}
+
+.play {
+		border-radius: 50%;
+		width:115px;
+		background-color: #4d4d33;
+		margin-left:20px;}
+
+.about {
+		border-radius: 50%;
+		width:115px;
+		margin-left:20px;
+		background-color: #4d4d33;
+	}
+
+
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.buttons:hover{
+	background-color:black;color:gold;
+	border:1px solid gold;
+}
+hr{
+	width:800px;
+}
+#hr2{
+	width:600px;
+}
+#hr-log{
+	width:400px;
+	color:gold;
+}
+.log-title{
+	font-size:45px;
+	text-align:center;
+	font-weight: bold;
+	letter-spacing:5px;
+	font-family:agency fb;
+}
+#log-nav{
+	background-color:white;
+	opacity:0.6;
+}
+.items-wins{
+	color:green;
+	font-weight:bold;
+	letter-spacing: 3px;
+	font-size:16px;
+
+}
+.items-lost{
+	color:red;
+	font-weight:bold;
+	letter-spacing: 3px;
+	font-size:16px;
+
+}
+.items-all{
+	color:black;
+	font-weight:bold;
+	letter-spacing: 3px;
+	font-size:16px;
+
+}
+#txt-casino{
+position:absolute;
+top:550px;
+left:1000px;
+font-weight:bold;
+
+}
+#txt-cave{
+position:absolute;
+top:340px;
+left:710px;
+font-weight:bold;
+
+}
+
+#txt-house{
+position:absolute;
+top:340px;
+left:1010px;
+font-weight:bold;
+
+}
+
+#txt-mine{
+position:absolute;
+top:550px;
+left:715px;
+font-weight:bold;
+text-decoration:overline;
+
+}
+
+#ninja-pic{
+
+}
+h4{
+	font-weight:bolder;
+}

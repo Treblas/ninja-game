@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<head>
+	<title>Ninja Gold</title>
+</head>
+
+<body>
+	<div id = "container">
+	</div>
+
+		<div class = "page-whole" >
+			<div class="col-md-4" style="background-color:black;height:100%;">
+			<div class="main" >
+				<div class ="form-inline" >
+					<center><img src="images/ninja-gold-logo.png"  height="120px" width="150px;"></center>
+					<br>
+					<div id = "cont" class="container showback">
+							<h2 class="log-title">GAME LOG</h2>
+							<ul class="nav nav-tabs" id="log-nav">
+								<li class = "active" title="All Logs"><a class="items-all" data-toggle="tab" href="#log1">All</a></li>
+								<li class="items" title="Win Logs"><a class="items-wins" data-toggle="tab" href="#log2">Wins</a></li>
+								<li  title="Lost Logs"><a  class="items-lost" data-toggle="tab" href="#log3">Losses</a></li>
+							</ul>
+						</center>
+
+						<div class="tab-content showback">
+							<div id="log1" class="tab-pane fade in active pan-style"  >
+							</div>
+							<div id="log2" class="tab-pane fade pan-style">
+							</div>
+							<div id="log3" class="tab-pane fade pan-style">
+							</div>
+						</div>	
+					</div>
+					<br><br>
+					<div class = "button-holder">
+						<center><h4>FIND THE GOLD</h4></center>
+						<input type=button onClick="move_img('cave'); myFunction();"" class = "buttons btn " id = "btncave" value='CAVE'>
+						<input type=button onClick="move_img('house'); myFunction();" class = "buttons btn " id = "btnhouse" value='HOUSE'><BR><BR>
+						<input type=button onClick="move_img('mine'); myFunction();" class = "buttons btn " id = "btnmine" value='MINE'>
+						<input type=button onClick="move_img('down'); myFunction();" class = "buttons btn " id = "btncasino" value='CASINO'>
+						<br><br>
+				</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8" >
+			<div class = "page" >
+				<div class ="form-inline" >
+					<br>
+					<div class = "col-xs-3" style="margin-left:60px;">
+							<div class="input-group">
+    							<span class="input-group-addon" id="lbl-txts">Attempts</span>
+   									 <input id="attempts" type="text" title="attempts" class="form-control col-sm-1 textbox-margin" value = 20 disabled>
+ 							 </div>
+					</div>
+					<div class = "col-xs-3" style="margin-right:80px;  float: right">
+						<div class="input-group">
+   							 <input id="earned" type="text" title="Gold" class="form-control col-sm-1 textbox-margin" value = 0 readonly>
+ 							     <span class="input-group-addon" id="lbl-txts">Gold</span>
+ 						</div>
+					</div>
+					<br><br>
+					<div class = "col-xs-3" style="margin-left:60px;margin-top:20px; float:left;">
+						<div class="input-group">
+							 	<span class="input-group-addon "  name="lbl-bottom-losses"  >Losses</span>
+   								<input id = "lost" type="text" title="losses" class="form-control col-sm-1 textbox-margin" value = 0 readonly>
+
+ 						 </div>
+					</div>			
+					<div class = "col-xs-3" style="margin-right:80px;margin-top:20px;float:right;">
+						<div class="input-group">
+   								<input id = "gained"" type="text" title="gains" class="form-control col-sm-1 textbox-margin" value = 0 disabled>
+ 							    <span class="input-group-addon"  name="lbl-bottom-gains" >Gains</span>
+
+ 						 </div>
+					</div>
+					<div class = "button-holder">
+
+						<br><br><br>
+						<hr></div>
+						<div class = "world" >
+							<img src = "images/caves.png" class = "img">
+							<img src = "images/houses.jpg" class = "img img-leftpadding">		
+
+						</div>
+
+						<div class = "world" >
+							<img src = "Images/mine.jpg" class = "img">
+							<img src = "Images/casinos.jpg" class = "img img-leftpadding" >
+						</div>
+						<hr>
+						<center><button class = " btn btn-danger glyphicon glyphicon-"  id = "btnreset" >Reset Game</button></center>
+						<br>
+
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript" src = "js/jquery.min.js"></script>
+			<script type="text/javascript" src = "js/bootstrap.js"></script>
+	 
+		</body>
+		</html>
+<img src=images/pokeninja.gif id='ninja' class = "ninja-pic " style="position:absolute; top:250px; left:510px;height:110px; width:100px;">
+
+
+<p id="txt-cave" style="color:gold;"></p>
+<p id="txt-house" style="color:gold;"></p>
+<p id="txt-mine" style="color:gold;"></p>
+<p id="txt-casino" style="color:gold;"></p>
+
+
+<script>
+
+function display() {
+}
+</script>
+
+<script language='JavaScript' type='text/JavaScript'>
+
+function move_img(ninja) {
+
+switch(ninja){
+case "down":
+document.getElementById('ninja').style.top=400 + "px";
+document.getElementById('ninja').style.left=1090 + "px";
+document.getElementById("txt-casino").innerHTML = 'I am on the casino and I am a Millionaire!'
+document.getElementById("txt-mine").innerHTML = ''
+document.getElementById("txt-cave").innerHTML = ''
+document.getElementById("txt-house").innerHTML = ''
+
+break;
+
+case "cave":
+document.getElementById('ninja').style.top=190 + "px";
+document.getElementById('ninja').style.left=770 + "px";
+document.getElementById("txt-cave").innerHTML = 'I am on the cave and its dark!'
+document.getElementById("txt-casino").innerHTML = ''
+document.getElementById("txt-mine").innerHTML = ''
+document.getElementById("txt-house").innerHTML = ''
+
+
+break;
+
+case "house":
+document.getElementById('ninja').style.top=180 + "px";
+document.getElementById('ninja').style.left=1090 + "px";
+document.getElementById("txt-house").innerHTML = 'I am on the house and nobodys home!'
+document.getElementById("txt-casino").innerHTML = ''
+document.getElementById("txt-mine").innerHTML = ''
+document.getElementById("txt-cave").innerHTML = ''
+
+
+break;
+
+case "mine":
+document.getElementById('ninja').style.top=400 + "px";
+document.getElementById('ninja').style.left=770 + "px";
+document.getElementById("txt-mine").innerHTML = 'I am on the mine and its cool!'
+document.getElementById("txt-casino").innerHTML = ''
+document.getElementById("txt-cave").innerHTML = ''
+document.getElementById("txt-house").innerHTML = ''
+
+
+break;
+
+}
+}
+
+
+</script>
+
+
+
